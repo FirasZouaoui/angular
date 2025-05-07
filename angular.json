@@ -43,7 +43,8 @@
                   "maximumError": "4kb"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "baseHref":"/"
             },
             "development": {
               "buildOptimizer": false,
@@ -94,5 +95,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "4e32d1d3-f807-4551-9633-7dac19660803"
   }
 }
