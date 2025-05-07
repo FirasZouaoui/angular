@@ -21,9 +21,11 @@ jobs:
       - name: 📦 Install dependencies
         run: npm install
 
+      - name: 🔧 Install Angular CLI
+        run: npm install -g @angular/cli
+
       - name: 🛠️ Build Angular app
         run: ng build angularvf --configuration production
-
 
       - name: ☁️ Deploy to Firebase Hosting
         run: npx firebase deploy --token="${{ secrets.FIREBASE_TOKEN }}"
